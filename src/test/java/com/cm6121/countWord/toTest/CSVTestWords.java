@@ -72,7 +72,7 @@ class CSVTestWords {
         final List<String[]> strings = UtilityReaderTest.readCSVMethod(new File(documentToRead));
         String[] strings1 = strings.get(strings.size() - 1);
         assertEquals("the", strings1[0]);
-        assertEquals("247", strings1[1]);
+        assertEquals("250", strings1[1]);
     }
 
     @Test
@@ -122,7 +122,7 @@ class CSVTestWords {
         final List<String[]> strings = UtilityReaderTest.readCSVMethod(new File(documentToRead));
         String[] strings2 = strings.get(strings.size() - 1);
         assertEquals("the", strings2[0]);
-        assertEquals("216", strings2[1]);
+        assertEquals("217", strings2[1]);
     }
 
     @Test
@@ -147,7 +147,7 @@ class CSVTestWords {
         assertEquals("April 1844", strings1[1]);
         for (String[] word : strings) {
             if (word[0].equals("the")) {
-                assertEquals("255", word[1]);
+                assertEquals("256", word[1]);
             } else if (word[0].equals("about")) {
                 assertEquals("13", word[1]);
             } else if (word[0].equals("character")) {
@@ -167,9 +167,9 @@ class CSVTestWords {
         assertEquals("November 1838", strings1[1]);
         for (String[] word : strings) {
             if (word[0].equals("the")) {
-                assertEquals("238", word[1]);
+                assertEquals("242", word[1]);
             } else if (word[0].equals("pompey")) {
-                assertEquals("21", word[1]);
+                assertEquals("24", word[1]);
             } else if (word[0].equals("stretched")) {
                 assertEquals("1", word[1]);
             }
@@ -186,13 +186,13 @@ class CSVTestWords {
         assertEquals("March 1849", strings1[1]);
         for (String[] word : strings) {
             if (word[0].equals("dwarf")) {
-                assertEquals("17", word[1]);
+                assertEquals("19", word[1]);
             } else if (word[0].equals("fifty")) {
                 assertEquals("1", word[1]);
             } else if (word[0].equals("the")) {
-                assertEquals("301", word[1]);
+                assertEquals("302", word[1]);
             } else if (word[0].equals("king")) {
-                assertEquals("36", word[1]);
+                assertEquals("37", word[1]);
             }
 
         }
@@ -204,17 +204,17 @@ class CSVTestWords {
         final List<String[]> strings = UtilityReaderTest.readCSVMethod(new File(documentToRead));
         for (String[] word : strings) {
             if (word[0].equals("dwarf")) {
-                assertEquals("17", word[1]);
+                assertEquals("19", word[1]);
             } else if (word[0].equals("large")) {
                 assertEquals("18", word[1]);
             } else if (word[0].equals("the")) {
-                assertEquals("1257", word[1]);
+                assertEquals("1267", word[1]);
             } else if (word[0].equals("little")) {
                 assertEquals("21", word[1]);
             } else if (word[0].equals("which")) {
                 assertEquals("122", word[1]);
             } else if (word[0].equals("king")) {
-                assertEquals("37", word[1]);
+                assertEquals("38", word[1]);
             }else if(word[0].equals("bouche")){
                 assertEquals("1", word[1]);
             }
