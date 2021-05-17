@@ -4,6 +4,10 @@ import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,5 +29,11 @@ public class FileReader {
             System.out.println(e.getStackTrace());
         }
         return strings;
+    }
+    public String getFileDir(){
+        return ClassLoader.getSystemClassLoader().getResource("FolderDocumentsToRead").getPath();
+    }
+    public File[] getDirFiles() throws UnsupportedEncodingException {
+        return new File(URLDecoder.decode(getFileDir(),"UTF-8")).listFiles();
     }
 }
