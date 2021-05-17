@@ -95,7 +95,6 @@ public class WriterCSV {
                         if(i==2){
                             year = year.substring(1);
                         }
-                        System.out.println(year);
                         writer.write(stats.getStatistics()
                                 .get(i)
                                 .get("title") +
