@@ -142,7 +142,6 @@ public class Statistics {
                 if(counter>19){
                     break;
                 }
-                System.out.println("test");
                 finalString += "Word: "
                         + entry.getKey()
                         + ", Occurrences: "
